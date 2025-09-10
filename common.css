@@ -35,12 +35,43 @@ nav a {
 }
 
 .btnprimary {
-    border: none;
+    border: 2px solid #FD6E0A;
     color: white;
     padding: 10px 25px;
     font-weight: 700;
     border-radius: 5px;
 
+}
+
+.btnLight {
+    border: 2px solid #FD6E0A;
+    color: #FD6E0A;
+    padding: 10px 25px;
+    font-weight: 700;
+    border-radius: 5px;
+
+}
+
+.half-width {
+    width: 50%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 120px; */
+}
+
+.hero img {
+    height: 500px;
+    width: auto;
+
+}
+
+.rightdiv {
+    display: flex;
+    justify-content: end;
 }
 
 .btnprimary:hover {
@@ -49,6 +80,7 @@ nav a {
 
 .contaner {
     padding: 0px 120px;
+    display: flex;
 }
 
 .manus a {
@@ -69,12 +101,87 @@ nav {
 
 .bar {
     display: none;
+}
+
+.textLightDark h3 {
+    color: #474747;
+}
+
+.leftDiv h3 {
+    font-size: 35px;
+    width: 600px;
+}
+
+.leftDiv h1 {
+    font-size: 85px;
+    width: 700px;
+    text-decoration: none;
+}
+
+.leftDiv p {
+    font-size: 18px;
+    color: #757575;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* .leftDiv {
+    padding-left: 120px;
+} */
+
+header {
+    background-image: url("./media/devloper.png"), url("./media/background.png");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-color: #FFF8F3;
+}
+
+@media screen and (max-width:1224px) {
+    .leftDiv h3 {
+        font-size: 20px;
+        font-weight: 600px;
+
+    }
+
+    .leftDiv h1 {
+        font-size: 55px;
+        font-weight: 700px;
+
+
+    }
+
+    .leftDiv p {
+        font-size: 10px;
+
+
+    }
+
+    .btnprimary {
+
+        padding: 5px 15px;
+        font-size: 20px;
+
+
+    }
+
+    .btnLight {
+
+        padding: 5px 15px;
+        font-size: 20px;
+
+
+    }
+
+
 
 }
 
 @media screen and (max-width:1024px) {
+
     .contaner {
-        padding: 0px 10px;
+        padding: 0px 20px;
     }
 
     .manus a {
@@ -91,5 +198,17 @@ nav {
 
     .bar {
         display: block;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .half-width {
+        width: 100%;
+    }
+
+    .leftDiv {
+        text-align: center;
     }
 }
