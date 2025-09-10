@@ -1,0 +1,95 @@
+/* font family link  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: "Open Sans", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.textprimary {
+    color: #FD6E0A;
+}
+
+.bgprimary {
+    background-color: #FD6E0A;
+}
+
+.textDark {
+    color: #000000;
+
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: 900;
+
+}
+
+.textLightDark {
+    color: #474747;
+}
+
+.btnprimary {
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    font-weight: 700;
+    border-radius: 5px;
+
+}
+
+.btnprimary:hover {
+    background-color: blueviolet;
+}
+
+.contaner {
+    padding: 0px 120px;
+}
+
+.manus a {
+    margin-left: 51px;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar i {
+    font-size: 25px;
+
+}
+
+.bar {
+    display: none;
+
+}
+
+@media screen and (max-width:1024px) {
+    .contaner {
+        padding: 0px 10px;
+    }
+
+    .manus a {
+        margin-left: 20px;
+
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .manus {
+        display: none;
+    }
+
+    .bar {
+        display: block;
+    }
+}
