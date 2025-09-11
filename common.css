@@ -125,8 +125,6 @@ nav {
     margin-bottom: 20px;
 }
 
-
-
 /* .leftDiv {
     padding-left: 120px;
 } */
@@ -137,6 +135,32 @@ header {
     background-position: top left, bottom right;
     background-color: #FFF8F3;
 }
+
+.about {
+    background-color: #FFF8F3;
+    padding: 130px 150px;
+    margin: 120px;
+
+}
+
+.about>p {
+    font-size: 18px;
+    color: #757575;
+    text-align: center;
+}
+
+.personData {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 30px;
+}
+
+.title {
+    font-size: 35px;
+    text-align: center;
+}
+
 
 @media screen and (max-width:1224px) {
     .leftDiv h3 {
@@ -189,9 +213,16 @@ header {
 
     }
 
+    .about {
+        margin: 120px 4px;
+
+    }
+
 }
 
+
 @media screen and (max-width:768px) {
+
     .manus {
         display: none;
     }
@@ -211,4 +242,25 @@ header {
     .leftDiv {
         text-align: center;
     }
+
+    .personData {
+
+        grid-template-columns: auto auto;
+
+
+    }
+
+    .personData h4 {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .personData {
+        grid-template-columns: auto;
+
+    }
+
+
 }
